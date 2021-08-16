@@ -1,1 +1,1 @@
-web: gunicorn leaks_secret.wsgi
+web: gunicorn phishing.wsgi --log-file -
