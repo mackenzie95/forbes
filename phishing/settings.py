@@ -10,11 +10,12 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
-from pathlib import path
+from pathlib import Path
 import os
 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 # Quick-start development settings - unsuitable for production
@@ -25,9 +26,9 @@ BASE_DIR = path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-*7yx&7i(d%+xx)=*&u8=-7mi7kvd2=^r(dt*uxtcq2w%3fpamj'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ["forbe.herokuapp.com"]
+ALLOWED_HOSTS = ["forbe.herokuapp.com", "localhost"]
 
 
 # Application definition
